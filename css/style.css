@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Geologica:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Outfit:wght@300;400;600&family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap');
+html{
+    font-size: 62.5%;
+}
+
+body{
+background-color: #b0d5ce;
+}
+
+.kanban {
+    max-width: 100%;
+    margin: 0 auto;
+	display: flex;
+	padding: 30px;
+	max-width: 121rem;
+	background: #009578;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 4px #01a383;
+}
+
+.kanban * {
+	font-family: 'Geologica', sans-serif;
+    font-size: 1.6rem;
+}
+
+.btn-tog
+{
+	font-family: 'Gasoek One', sans-serif;
+}
+
+
+.kanban__column {
+	flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.kanban__column-title {
+	margin-bottom: 20px;
+	font-size: 3.5rem;
+    font-weight: 700;
+	color: white;
+	user-select: none;
+}
+
+@media screen and (max-width:715px) {
+    .kanban *{
+        font-size: 1.3rem;
+    }
+    .kanban__column-title{
+        font-size: 2.3rem;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 530px){
+    body{
+        overflow: auto;
+    }
+    .kanban{
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+    .kanban__add-item{
+        margin-bottom: 2.5rem;
+    }
+	.kanban__column:not(:last-child) {
+		margin-right: 0;
+	}
+}
+
+.kanban__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.kanban__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.none{
+	display: none;
+}
+
+
+.buttons{
+	/* border: 1px solid black; */
+	display: flex;
+	gap: 1rem;
+	justify-content: start;
+	align-items: center;
+	margin-bottom: 1rem
+}
+
+.btn-tog{
+	background: #009578;
+	border: none;
+	outline: none;
+	padding: 1rem 2rem;
+	color: white;
+	box-shadow: 2px 2px 4px #029376;
+	font-size: 1.6rem;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	border-radius: .5rem;
+}
+
+.btn-tog:hover{
+	background-color: #017961;
+}
+
+.btn-tog:active{
+	transform: scale(.9);
+}
+
+.img1{
+	position: relative;
+}
+
+.img1 img{
+	width: 3rem;
+	position: absolute;
+	transform: translateY(50%);
+}
+
+.img2{
+	position: relative;
+}
+
+.img2 img{
+	width: 3rem;
+	position: absolute;
+	transform: translateY(50%);
+}
+
+.img3{
+	position: relative;
+}
+
+.img3 img{
+	width: 3rem;
+	position: absolute;
+	transform: translateY(50%);
+}
+
+.kanban__column-title,
+.kanban__item-input,
+.kanban__add-item{
+	font-family: 'Geologica', sans-serif;
+}

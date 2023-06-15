@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kanban Board</title>
+	<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/sticky.css">
+    <link rel="stylesheet" href="/css/notes.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="buttons">
+            <button class="btn-tog img1" data-id="kanban">1
+                <img src="/board.png" alt="">
+            </button>
+            <button class="btn-tog img2" data-id="sticky">2
+                <img src="/sticky-note.png" alt="">
+            </button>
+            <button class="btn-tog img3" data-id="notes">3
+                <img src="/note-book.png" alt="">
+            </button>
+        </div>
+    </header>
+
+	<section id="kanban" class="kanban none" >
+	
+    </section>
+
+    <section class="sticky sticky-notes none" id="app">
+        <button class="add-note" type="button">+</button>
+    </section>
+
+
+    <div class="notes none" id="appNot">
+      
+    </div>
+
+    
+    <script src="js/notes.js"  type="module"></script>
+    <script src="js/sticky.js"></script>
+	<script src="js/app.js" type="module"></script>
+    <script src="/js/toggle.js"></script>
+</body>
+</html>
